@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FEAST MODE® — Case Study</title>
+<meta name="description" content="Case study: FEAST MODE®, a scroll-driven food commercial. Designed and directed by Anita, built with Claude. 4–6 November 2026.">
+<meta name="theme-color" content="#F7EEDB">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cs.css">
+<script src="js/boot.js"></script>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FEAST MODE® — Case Study">
+<meta property="og:description" content="A scroll-driven food commercial, designed and directed by Anita, built with Claude.">
+<meta property="og:image" content="/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="bar__brand" href="#ch01">FEAST MODE<sup>®</sup><span>case study</span></a>
+  <p class="bar__now" aria-live="polite"><span class="serif" id="now-num">N° 01</span><span id="now-name">The Opening</span></p>
+  <button class="bar__toggle" type="button" aria-expanded="false" aria-controls="chapters">Chapters</button>
+  <span class="bar__progress" aria-hidden="true"></span>
+</header>
+<nav class="chapters" id="chapters" aria-label="Chapters">
+  <ol>
+    <li><a href="#ch01"><span class="serif">01</span>The Opening</a></li>
+    <li><a href="#ch02"><span class="serif">02</span>The Challenge</a></li>
+    <li><a href="#ch03"><span class="serif">03</span>Creative Direction</a></li>
+    <li><a href="#ch04"><span class="serif">04</span>Design System</a></li>
+    <li><a href="#ch05"><span class="serif">05</span>Eight Scenes</a></li>
+    <li><a href="#ch06"><span class="serif">06</span>Making It Move</a></li>
+    <li><a href="#ch07"><span class="serif">07</span>Production Process</a></li>
+    <li><a href="#ch08"><span class="serif">08</span>Designer-Led Refinement</a></li>
+    <li><a href="#ch09"><span class="serif">09</span>Performance &amp; Access</a></li>
+    <li><a href="#ch10"><span class="serif">10</span>The Launch</a></li>
+  </ol>
+</nav>
+
+<main id="main">
+
+<!-- ======================= 01 THE OPENING ======================= -->
+<section class="chapter" id="ch01" data-num="01" data-name="The Opening" aria-labelledby="t01">
+  <div class="intro">
+    <p class="label kicker"><span class="serif">N° 01</span> Case study · 4–6 Nov 2026</p>
+    <h1 class="intro__title" id="t01"><span class="line"><span>FEAST MODE<sup>®</sup></span></span></h1>
+    <p class="lede" style="max-width:52rem">A scroll-driven landing page for a fictional food brand, built to feel like a TV food advert. Eight scenes, each with its own motion, flow into one another. <em>Designed and directed by Anita, built with Claude,</em> in three days. It’s live on Vercel.</p>
+    <div class="cover__ctas" style="margin-top:1.6rem">
+      <a class="btn" href="https://feast-mode-eta.vercel.app" rel="noopener">View the live site <span class="btn__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13 13 1M13 1H4M13 1v9" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+      <a class="btn btn--ghost" href="https://github.com/AnitaLever-UX/feast-mode" rel="noopener">Code on GitHub <span class="btn__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13 13 1M13 1H4M13 1v9" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+    </div>
+    <dl class="meta" style="margin-top:2.5rem">
+      <div><dt>Project</dt><dd>Personal portfolio piece. The brand is fictional; this isn’t client work.</dd></div>
+      <div><dt>Anita</dt><dd>UX/UI designer: brief, art direction, references, approvals, device testing</dd></div>
+      <div><dt>Claude</dt><dd>AI design and build partner: images, front end, testing, deployment</dd></div>
+      <div><dt>Built with</dt><dd>HTML, CSS, GSAP 3.12.5 + ScrollTrigger, Higgsfield (GPT Image 2.5)</dd></div>
+      <div><dt>Live</dt><dd><a class="link" href="https://feast-mode-eta.vercel.app" rel="noopener">feast-mode-eta.vercel.app</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ======================= 02 THE CHALLENGE ======================= -->
+<section class="chapter bg-ink on-dark" id="ch02" data-num="02" data-name="The Challenge" aria-labelledby="t02">
+  <div class="opener">
+    <div>
+      <span class="opener__num" aria-hidden="true">02</span>
+      <h2 class="opener__title" id="t02"><span class="line"><span>Not a</span></span><span class="line"><span>restaurant</span></span><span class="line"><span>template.</span></span></h2>
+    </div>
+    <div>
+      <blockquote class="pull" data-reveal>“An interactive food advertising campaign brought to life.”<span class="pull__by">From Anita’s brief</span></blockquote>
+    </div>
+  </div>
+  <div class="block" style="padding-top:0">
+    <div class="cols">
+      <div class="cols__side"><p class="label"><span class="serif">The brief</span></p></div>
+      <div class="prose">
+        <p class="lede" data-reveal style="color:var(--cream)">Food sites tend to look alike: a hero photo, a card grid of dishes and a reservation button. The brief asked for the opposite, a page that sells appetite the way a TV food ad does, through motion, surreal food images and kinetic type.</p>
+        <p data-reveal>So the challenge was mostly about direction rather than features. Eight very different scenes had to feel like <em>one campaign</em>, the motion had to feel earned rather than hijack the scroll, and it all had to stay fast, responsive and accessible.</p>
+      </div>
+    </div>
+    <div class="versus" data-reveal>
+      <div class="no"><h3>Ruled out</h3><ul><li>Generic card grids</li><li>Static hero banners</li><li>Ordinary fade-in-on-scroll effects</li><li>Fake 3D made by spinning a flat image</li><li>Controls that don’t do anything</li></ul></div>
+      <div><h3>Required</h3>
+        <ol class="reqs">
+          <li>Eight sections in a fixed order, each with its own motion identity, flowing as one experience</li>
+          <li>GSAP and ScrollTrigger, pinning only where it adds value</li>
+          <li>Responsive on desktop, tablet and mobile, with semantic, accessible HTML and reduced-motion support</li>
+          <li>Lazy-loaded media and high performance</li>
+          <li>Tomato red <span class="serif">#E94F2E</span> reserved for clickable UI only</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 03 CREATIVE DIRECTION ======================= -->
+<section class="chapter" id="ch03" data-num="03" data-name="Creative Direction" aria-labelledby="t03">
+  <div class="opener bg-guava">
+    <div>
+      <span class="opener__num" aria-hidden="true">03</span>
+      <h2 class="opener__title" id="t03"><span class="line"><span>Playful</span></span><span class="line"><span>editorial</span></span><span class="line"><span>maximalism.</span></span></h2>
+      <p class="opener__stand" data-reveal>Meets surreal 3D food advertising. Anita set that direction and made eight reference images in Higgsfield, one per scene. Reference 05 is shown here as the example.</p>
+    </div>
+    </div>
+  <div class="block">
+    <div class="cols" style="margin-bottom:4rem">
+      <div class="cols__side"><p class="label"><span class="serif">Translate, don’t copy</span></p></div>
+      <div class="prose">
+        <p class="lede" data-reveal>Each reference was read for its layout, type hierarchy, composition, colour and what ought to move. Then it was rebuilt inside one shared system.</p>
+        <p data-reveal>Most of the references had dark or saturated backgrounds. <strong>Every one moved to warm cream</strong>, so eight scenes read as one brand. No wordmark or text from any reference was reproduced. Effects that would have cost image credits, such as flour, oil, steam, fog, glass and the sauce flood, were drawn in code.</p>
+      </div>
+    </div>
+    <div class="pairs">
+      <article class="pair" data-reveal>
+        <div class="pair__head"><h3><span class="serif">N° 05</span> Flavour in Motion</h3><span class="tag tag--ref">Reference → finished scene</span></div>
+        <figure class="shot pair__ref"><div class="shot__frame"><img src="img/ref-05.webp" width="1200" height="900" loading="lazy" alt="Anita's reference 05: a crown of glossy tomato sauce erupting from a bowl above vine tomatoes and basil."></div><figcaption class="cap"><span>Reference 05 · by Anita in Higgsfield</span></figcaption></figure>
+        <figure class="shot"><div class="shot__frame"><img src="img/desk-s05_000.webp" width="1600" height="1000" loading="lazy" alt="Finished section: A LITTLE MESS. A LOT OF FLAVOUR. with a sauce splash crown over vine tomatoes."></div><figcaption class="cap"><span>Finished scene · captured from the deployed build</span></figcaption></figure>
+        <div class="pair__note"><p><b>Kept</b>The sauce crown, glowing droplets, and the vine tomatoes and basil at the base.</p><p><b>Changed</b>The headline is split across the frame. The single image became three acts: eruption, flood and reveal. The flood uses separate sauce colours, never the UI red.</p></div>
+      </article>
+    </div>
+    <p class="muted" style="margin-top:2rem;font-size:.95rem;max-width:44rem">The other seven references were translated the same way. Each finished scene is shown once, in chapter 05.</p>
+  </div>
+</section>
+
+<!-- ======================= 04 DESIGN SYSTEM ======================= -->
+<section class="chapter" id="ch04" data-num="04" data-name="Design System" aria-labelledby="t04">
+  <div class="opener bg-cream2">
+    <div>
+      <span class="opener__num" aria-hidden="true">04</span>
+      <h2 class="opener__title" id="t04"><span class="line"><span>Maximalist</span></span><span class="line"><span>art. Strict</span></span><span class="line"><span>rules.</span></span></h2>
+      <p class="opener__stand" data-reveal>Six colours, three typefaces, one margin and one spacing value hold eight very different scenes together.</p>
+    </div>
+    </div>
+  <div class="block">
+    <p class="label kicker"><span class="serif">Palette</span> One colour for clicking, five for everything else</p>
+    <div class="swatches" data-reveal>
+      <div class="sw sw--cream"><img class="sw__obj" src="img/cut/s01-plate.webp" alt="" loading="lazy" style="width:110%;right:-30%;top:22%"><b>Warm cream</b><small><code>#F7EEDB</code>Every background. All eight references moved to it.</small></div>
+      <div class="sw sw--ink"><img class="sw__obj" src="img/cut/s03-bowl-empty.webp" alt="" loading="lazy" style="width:110%;right:-30%;top:20%"><b>Ink</b><small><code>#292923</code>Type, line art and the footer.</small></div>
+      <div class="sw sw--herb"><img class="sw__obj" src="img/cut/s06-fern.webp" alt="" loading="lazy" style="width:52%;right:0;top:2%"><b>Herb green</b><small><code>#244C3C</code>The BORING tile, the Always Extra poster and the placemat.</small></div>
+      <div class="sw sw--yolk"><img class="sw__obj" src="img/cut/s06-napkin.webp" alt="" loading="lazy" style="width:52%;right:2%;top:4%"><b>Yolk yellow</b><small><code>#F4C542</code>The Big Flavour poster, specks and flowers.</small></div>
+      <div class="sw sw--guava"><img class="sw__obj" src="img/cut/s06-plates.webp" alt="" loading="lazy" style="width:92%;right:-22%;top:6%"><b>Guava pink</b><small><code>#E8A0A5</code>The No Boring Bites poster, spheres and ritual plates.</small></div>
+      <div class="sw sw--red"><img class="sw__obj" src="img/cut/s01-tomato.webp" alt="" loading="lazy"><b>Tomato red</b><small><code>#E94F2E</code>Clickable things only: buttons, the active nav link, the open menu toggle, hovered arrows and the dialog close.</small></div>
+    </div>
+
+    <div class="redrule" data-reveal>
+      <div>
+        <h3 class="h-display h3" style="margin-bottom:1rem">The tomato-red rule</h3>
+        <p class="muted">If it’s red, you can click it. Naturally red food keeps its real colour, and the sauce effects use their own three sauce colours (<span class="serif">#9E2410, #C9361A, #F07A55</span>), so the rule holds even when the whole screen turns to sauce. During testing a fog layer tinted the menu buttons pink. That counted as breaking the rule, and it was fixed. This case study follows the same rule: only its links and buttons are red.</p>
+      </div>
+      <div class="redrule__demo">
+        <a class="btn" href="#ch05">Explore the menu<span class="btn__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13 13 1M13 1H4M13 1v9" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <p class="muted" style="margin:0;font-size:.9rem;max-width:22rem">The site’s button: a red pill with a cream arrow. The text is 19.2 px bold, so cream on red passes the contrast check.</p>
+      </div>
+    </div>
+
+    <div class="specimens">
+      <div class="spec spec--display" data-reveal><div class="spec__name"><b>Bowlby One SC</b><span>Oversized headlines and statements</span></div><p class="spec__sample">Turn your appetite up.</p></div>
+      <div class="spec spec--sans" data-reveal><div class="spec__name"><b>DM Sans</b><span>Body copy, nav, labels, prices, buttons</span></div><p class="spec__sample">Double smashed beef, molten cheddar, house pickles and smoky Feast sauce on a glossy brioche. <b>$16</b></p></div>
+      <div class="spec spec--serif" data-reveal><div class="spec__name"><b>Instrument Serif Italic</b><span>Editorial accents, numbering and captions</span></div><p class="spec__sample">N° 03 · fearless.</p></div>
+    </div>
+
+    <div class="tokens">
+      <div class="tok" data-reveal>
+        <h4>The N° device</h4>
+        <p class="label" style="margin:.6rem 0 1rem"><span class="serif">N° 03</span> The Ingredients Laboratory</p>
+        <p class="muted" style="font-size:.95rem">Every section opens with the same short rule, serif number and uppercase label. This page uses it too.</p>
+      </div>
+      <div class="tok" data-reveal>
+        <h4>One shared side margin</h4>
+        <div class="gutter-demo" aria-hidden="true"><i style="left:0;width:7%"></i><i style="right:0;width:7%"></i></div>
+        <table class="tbl"><thead><tr><th scope="col">Screen</th><th scope="col" class="num">Margin</th></tr></thead>
+          <tbody><tr><td>Desktop (1440)</td><td class="num">58 px</td></tr><tr><td>Tablet landscape</td><td class="num">41 px</td></tr><tr><td>Tablet portrait</td><td class="num">33 px</td></tr><tr><td>Phone</td><td class="num">20 px</td></tr><tr><td>Phone, sideways</td><td class="num">25 px</td></tr></tbody></table>
+      </div>
+      <div class="tok" data-reveal>
+        <h4>Shared spacing and motion</h4>
+        <table class="tbl"><tbody>
+          <tr><td>Nav to section label</td><td class="num">96 px</td></tr>
+          <tr><td>Same, short landscape screens</td><td class="num">62 px</td></tr>
+          <tr><td>Nav bar</td><td>Solid cream at all times</td></tr>
+          <tr><td>Easing and scroll smoothing</td><td>One shared value each</td></tr>
+          <tr><td>Reduced motion</td><td>Every animation off</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    </div>
+</section>
+
+<!-- ======================= 05 EIGHT SCENES ======================= -->
+<section class="chapter" id="ch05" data-num="05" data-name="Eight Scenes, One Experience" aria-labelledby="t05">
+  <div class="opener bg-yolk">
+    <div>
+      <span class="opener__num" aria-hidden="true">05</span>
+      <h2 class="opener__title" id="t05"><span class="line"><span>Eight scenes.</span></span><span class="line"><span>One</span></span><span class="line"><span>experience.</span></span></h2>
+      <p class="opener__stand" data-reveal>Each scene has a motion identity you can name in one phrase. Pick one and play it.</p>
+    </div>
+    </div>
+
+  <div class="block" style="padding-top:2.5rem">
+    <div class="player" data-player>
+      <div class="player__tabs" role="tablist" aria-label="Scenes"><button class="player__tab" role="tab" id="tab01" aria-controls="pan01" aria-selected="true"><span class="serif">01</span>Opener</button><button class="player__tab" role="tab" id="tab02" aria-controls="pan02" aria-selected="false" tabindex="-1"><span class="serif">02</span>Chaos</button><button class="player__tab" role="tab" id="tab03" aria-controls="pan03" aria-selected="false" tabindex="-1"><span class="serif">03</span>Lab</button><button class="player__tab" role="tab" id="tab04" aria-controls="pan04" aria-selected="false" tabindex="-1"><span class="serif">04</span>Menu</button><button class="player__tab" role="tab" id="tab05" aria-controls="pan05" aria-selected="false" tabindex="-1"><span class="serif">05</span>Sauce</button><button class="player__tab" role="tab" id="tab06" aria-controls="pan06" aria-selected="false" tabindex="-1"><span class="serif">06</span>Ritual</button><button class="player__tab" role="tab" id="tab07" aria-controls="pan07" aria-selected="false" tabindex="-1"><span class="serif">07</span>Posters</button><button class="player__tab" role="tab" id="tab08" aria-controls="pan08" aria-selected="false" tabindex="-1"><span class="serif">08</span>Final Bite</button></div>
+      <div class="player__panel" role="tabpanel" id="pan01" aria-labelledby="tab01">
+        <div class="player__copy">
+          <h3 class="scene__name">The Appetite Opener</h3>
+          <p class="scene__motion">“The crown rises, then bursts toward you.”</p>
+          <p class="muted">The plate rises and the ingredients spring out. On scroll they scatter by depth, and a tomato rolls out into the next scene.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="Hero at rest|The copy fades as the plate grows|Ingredients scatter|The plate fills the frame"><img src="img/desk-s01_000.webp" width="1600" height="1000" loading="lazy" alt="Hero at rest."><img src="img/desk-s01_030.webp" width="1600" height="1000" loading="lazy" alt="The copy fades as the plate grows."><img src="img/desk-s01_060.webp" width="1600" height="1000" loading="lazy" alt="Ingredients scatter."><img src="img/desk-s01_100.webp" width="1600" height="1000" loading="lazy" alt="The plate fills the frame."></div>
+          <div class="player__scrub"><label for="scrub01">Drag to play</label><input type="range" id="scrub01" min="0" max="300" value="0" data-scrub><span class="player__frame" aria-live="polite">Hero at rest</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan02" aria-labelledby="tab02" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">A Little Flavour Chaos</h3>
+          <p class="scene__motion">“Kinetic type that gets bowled over.”</p>
+          <p class="muted">The tomato from the hero knocks “BORING” down letter by letter, leaving the line: we don’t do boring food. No new images were needed.</p>
+          <span class="scene__pin">Pinned · 0 credits</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="BORING filled with food|The tomato rolls in|Letters knocked out|boring, struck through"><img src="img/desk-s02_000.webp" width="1600" height="1000" loading="lazy" alt="BORING filled with food."><img src="img/desk-s02_030.webp" width="1600" height="1000" loading="lazy" alt="The tomato rolls in."><img src="img/desk-s02_060.webp" width="1600" height="1000" loading="lazy" alt="Letters knocked out."><img src="img/desk-s02_100.webp" width="1600" height="1000" loading="lazy" alt="boring, struck through."></div>
+          <div class="player__scrub"><label for="scrub02">Drag to play</label><input type="range" id="scrub02" min="0" max="300" value="0" data-scrub><span class="player__frame" aria-live="polite">BORING filled with food</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan03" aria-labelledby="tab03" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">The Ingredients Laboratory</h3>
+          <p class="scene__motion">“Gravity assembles the dish.”</p>
+          <p class="muted">Ingredients fall, spin and drop into the bowl, which fills a step with every landing while an Assembly counter runs from 0 to 100%.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="Assembly 0%|Assembly 30%|Assembly 60%|Assembly 100%"><img src="img/desk-s03_000.webp" width="1600" height="1000" loading="lazy" alt="Assembly 0%."><img src="img/desk-s03_030.webp" width="1600" height="1000" loading="lazy" alt="Assembly 30%."><img src="img/desk-s03_060.webp" width="1600" height="1000" loading="lazy" alt="Assembly 60%."><img src="img/desk-s03_100.webp" width="1600" height="1000" loading="lazy" alt="Assembly 100%."></div>
+          <div class="player__scrub"><label for="scrub03">Drag to play</label><input type="range" id="scrub03" min="0" max="300" value="0" data-scrub><span class="player__frame" aria-live="polite">Assembly 0%</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan04" aria-labelledby="tab04" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">The Moving Menu</h3>
+          <p class="scene__motion">“A lazy-susan table sliding past.”</p>
+          <p class="muted">Four dishes turn past like a turntable. The arrows, the 01/04 counter and the “Discover dish” dialog all really work.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="Dish 01, The Big Energy Burger|Dish 02, Sunday Pasta Club|Dish 03, Golden Hour Bowl|Dish 04, The Hot Honey Crunch|The dish dialog open"><img src="img/desk-s04_000.webp" width="1600" height="1000" loading="lazy" alt="Dish 01, The Big Energy Burger."><img src="img/desk-s04_030.webp" width="1600" height="1000" loading="lazy" alt="Dish 02, Sunday Pasta Club."><img src="img/desk-s04_060.webp" width="1600" height="1000" loading="lazy" alt="Dish 03, Golden Hour Bowl."><img src="img/desk-s04_100.webp" width="1600" height="1000" loading="lazy" alt="Dish 04, The Hot Honey Crunch."><img src="img/desk-x_menu_dialog.webp" width="1600" height="1000" loading="lazy" alt="The dish dialog open."></div>
+          <div class="player__scrub"><label for="scrub04">Drag to play</label><input type="range" id="scrub04" min="0" max="400" value="0" data-scrub><span class="player__frame" aria-live="polite">Dish 01, The Big Energy Burger</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan05" aria-labelledby="tab05" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">Flavour in Motion</h3>
+          <p class="scene__motion">“Liquid takes over the screen.”</p>
+          <p class="muted">Sauce floods the screen and the headline turns cream underneath it. Then a hole tears open to reveal the dish. The eruption frame is in chapter 03.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="The flood rises and drips|Full flood, cream headline|The reveal"><img src="img/desk-s05_030.webp" width="1600" height="1000" loading="lazy" alt="The flood rises and drips."><img src="img/desk-s05_060.webp" width="1600" height="1000" loading="lazy" alt="Full flood, cream headline."><img src="img/desk-s05_100.webp" width="1600" height="1000" loading="lazy" alt="The reveal."></div>
+          <div class="player__scrub"><label for="scrub05">Drag to play</label><input type="range" id="scrub05" min="0" max="200" value="0" data-scrub><span class="player__frame" aria-live="polite">The flood rises and drips</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan06" aria-labelledby="tab06" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">The FEAST MODE Ritual</h3>
+          <p class="scene__motion">“The table sets itself, then breathes.”</p>
+          <p class="muted">The only unpinned scene: a calm breather after the flood. Objects settle onto the table and the cocktails fill as you scroll in.</p>
+          <span class="scene__pin scene__pin--off">Unpinned by design</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="The Ritual table"><img src="img/desk-s06_000.webp" width="1600" height="1000" loading="lazy" alt="The Ritual table."></div>
+          <p class="player__frame" style="margin-top:.9rem">A single frame: this scene doesn’t pin.</p>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan07" aria-labelledby="tab07" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">Good Food Has a Personality</h3>
+          <p class="scene__motion">“Posters pasted up, type with attitude.”</p>
+          <p class="muted">Three posters paste over one another. Fruit stands in for letters, and a fork and knife scissor shut into the X.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="Big Flavour|No Boring Bites pastes over|Always Extra slides in|Always Extra"><img src="img/desk-s07_000.webp" width="1600" height="1000" loading="lazy" alt="Big Flavour."><img src="img/desk-s07_030.webp" width="1600" height="1000" loading="lazy" alt="No Boring Bites pastes over."><img src="img/desk-s07_060.webp" width="1600" height="1000" loading="lazy" alt="Always Extra slides in."><img src="img/desk-s07_100.webp" width="1600" height="1000" loading="lazy" alt="Always Extra."></div>
+          <div class="player__scrub"><label for="scrub07">Drag to play</label><input type="range" id="scrub07" min="0" max="300" value="0" data-scrub><span class="player__frame" aria-live="polite">Big Flavour</span></div>
+        </div>
+      </div>
+      <div class="player__panel" role="tabpanel" id="pan08" aria-labelledby="tab08" hidden>
+        <div class="player__copy">
+          <h3 class="scene__name">The Final Bite</h3>
+          <p class="scene__motion">“The closing shot of the commercial.”</p>
+          <p class="muted">The fork lifts a bite toward the camera, “HUNGRY YET?” settles with the last button, and the footer wordmark rises.</p>
+          <span class="scene__pin">Pinned</span>
+        </div>
+        <div>
+          <div class="shot__frame player__stack" data-labels="Placemat and plate arrive|The headline settles|HUNGRY YET? and the button|The footer"><img src="img/desk-s08_030.webp" width="1600" height="1000" loading="lazy" alt="Placemat and plate arrive."><img src="img/desk-s08_060.webp" width="1600" height="1000" loading="lazy" alt="The headline settles."><img src="img/desk-s08_100.webp" width="1600" height="1000" loading="lazy" alt="HUNGRY YET? and the button."><img src="img/desk-footer.webp" width="1600" height="1000" loading="lazy" alt="The footer."></div>
+          <div class="player__scrub"><label for="scrub08">Drag to play</label><input type="range" id="scrub08" min="0" max="300" value="0" data-scrub><span class="player__frame" aria-live="polite">Placemat and plate arrive</span></div>
+        </div>
+      </div>
+      <p class="cap" style="margin-top:1rem"><span>Pick a scene, then drag to play its real frames.</span><span>All frames captured from the deployed build · 1440 × 900</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 06 MAKING IT MOVE ======================= -->
+<section class="chapter bg-herb on-dark" id="ch06" data-num="06" data-name="Making It Move" aria-labelledby="t06">
+  <div class="opener">
+    <div>
+      <span class="opener__num" aria-hidden="true">06</span>
+      <h2 class="opener__title" id="t06"><span class="line"><span>Making</span></span><span class="line"><span>it move.</span></span></h2>
+      <p class="opener__stand" data-reveal>Seven scenes are pinned and one isn’t. One runtime keeps them all in order, whichever way you scroll and whatever size the window is.</p>
+    </div>
+    </div>
+  <div class="block" style="padding-top:0">
+    <div class="cols">
+      <div class="cols__side"><p class="label"><span class="serif">Scroll budget</span></p></div>
+      <div>
+        <p class="lede" data-reveal style="color:var(--cream)">Pinning was used only where a scene needs time to play. The longest hold is the Menu, which has four dishes to show. The Ritual doesn’t pin at all.</p>
+      </div>
+    </div>
+    <div class="chart" id="pinchart" data-reveal style="background:var(--cream);color:var(--ink);border-radius:var(--radius);padding:1.6rem 1.6rem 1.2rem">
+      <div class="chart__bar"><p style="margin:0;font-weight:700">How long each scene holds the page, measured in screen heights (desktop, 1440 × 900)</p><button class="tbtn" type="button" data-table-toggle>Show as table</button></div>
+      <div class="chart__plot"></div>
+      <div class="chart__table"></div>
+      <p class="muted" style="font-size:.8rem;margin:.8rem 0 0">Source: ScrollTrigger pin start and end, measured on the deployed build. One unit is one 900 px screen.</p>
+    </div>
+
+    <ul class="rules" style="margin-top:4rem" data-reveal>
+      <li><b>Start up in page order</b><div class="steps__body"><span>Sections register themselves and then start top to bottom once the brand fonts load, one per frame. The hero is interactive straight away, and there’s no single long freeze.</span></div></li>
+      <li><b>Measure in page order</b><div class="steps__body"><span>Scroll positions are always calculated in page order, whatever order the animations were created in, so one pinned scene can never land on top of another.</span></div></li>
+      <li><b>Never rebuild on resize</b><div class="steps__body"><span>Values that depend on the layout are re-read when the window changes size. The animations themselves are never rebuilt.</span></div></li>
+      <li><b>Explicit start and end values</b><div class="steps__body"><span>Every scroll step states where it starts and where it ends, so scrolling backwards lands exactly where scrolling forwards began.</span></div></li>
+      <li><b>Pause what you can’t see</b><div class="steps__body"><span>Floating ingredients, fog, ribbons and steam only run while their section is on screen.</span></div></li>
+      <li><b>A cream curtain for jumps</b><div class="steps__body"><span>Nav links and buttons fade a cream curtain for a fraction of a second, jump instantly, snap every scene to its correct state and fade back, instead of smooth-scrolling through seven animated scenes.</span></div></li>
+    </ul>
+
+    <p class="label kicker" style="margin-top:5rem"><span class="serif">Continuity</span> Details that link one scene to the next</p>
+    <div class="threads">
+      <div class="thread" data-reveal><img src="img/cut/s01-tomato.webp" alt="" loading="lazy"><div><h4>The travelling tomato</h4><p>It rolls out of the hero and into Section 02, where it knocks “BORING” down.</p></div></div>
+      <div class="thread" data-reveal><img src="img/cut/s07-apple.webp" alt="" loading="lazy"><div><h4>The “boring” callback</h4><p>The polka-dot apple “O” in No Boring Bites answers the struck-through word in Section 02.</p></div></div>
+      <div class="thread" data-reveal><img src="img/cut/s08-pasta-bowl.webp" alt="" loading="lazy"><div><h4>The wavy green edge</h4><p>The poster wave bands in Section 07 come back as the Final Bite placemat’s scalloped edge.</p></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======================= 07 PRODUCTION ======================= -->
+<section class="chapter" id="ch07" data-num="07" data-name="Production Process" aria-labelledby="t07">
+  <div class="opener">
+    <div>
+      <span class="opener__num" aria-hidden="true">07</span>
+      <h2 class="opener__title" id="t07"><span class="line"><span>Designer-led.</span></span><span class="line"><span>AI-assisted.</span></span></h2>
+      <p class="opener__stand" data-reveal>Anita set a strict workflow: one reference at a time, and an approval gate before any image was generated. She approved every step before Claude went on.</p>
+    </div>
+    </div>
+  <div class="block" style="padding-top:0">
+    <div class="roles">
+      <div class="role role--anita" data-reveal>
+        <h3>Anita</h3><span class="serif">UX/UI designer · creative director</span>
+        <ul>
+          <li>Wrote the creative brief and the master design and production instructions</li>
+          <li>Defined the brand: palette, typefaces, copy for all eight sections and the tomato-red rule</li>
+          <li>Made the eight original visual references in Higgsfield</li>
+          <li>Approved each section’s direction and every image set at its quoted cost</li>
+          <li>Tested on her own devices and reported the problems behind each fix round</li>
+          <li>Asked for the performance audit and for consistent margins on every screen size</li>
+          <li>Created and connected the GitHub and Vercel accounts</li>
+        </ul>
+      </div>
+      <div class="role role--claude" data-reveal>
+        <h3>Claude</h3><span class="serif">AI design and build partner</span>
+        <ul>
+          <li>Analysed each reference and proposed how to translate it</li>
+          <li>Turned the direction into implementation decisions</li>
+          <li>Generated the site’s images through Higgsfield, after approval</li>
+          <li>Built the front end, the animation and the interactions</li>
+          <li>Ran automated tests: screenshots, resize, accessibility, frame rate</li>
+          <li>Fixed issues at their root cause</li>
+          <li>Deployed the site to GitHub and Vercel</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="label kicker" style="margin-top:5rem"><span class="serif">Every section</span> Anita directs, Claude builds</p>
+    <ol class="steps2"><li class="step step--anita" data-reveal><span class="step__who">Anita</span><b class="serif">i.</b><h4>Sets the direction</h4><p>Wrote the brief: the design style, the animation style and the copy for every section. Then made a Higgsfield reference for how each section should feel, to translate, not to copy.</p></li><li class="step step--claude" data-reveal><span class="step__who">Claude</span><b class="serif">ii.</b><h4>Analyses and proposes</h4><p>Reads the reference against her rules and proposes what to keep, what to change and what to draw in code, with the exact image cost.</p></li><li class="step step--anita" data-reveal><span class="step__who">Anita</span><b class="serif">iii.</b><h4>Decides</h4><p>Approves or changes the direction, and approves every image set at its quoted cost before anything is generated.</p></li><li class="step step--claude" data-reveal><span class="step__who">Claude</span><b class="serif">iv.</b><h4>Generates and builds</h4><p>Generates the approved images and builds the section in HTML, CSS and GSAP, with a reduced-motion version.</p></li><li class="step step--anita" data-reveal><span class="step__who">Anita</span><b class="serif">v.</b><h4>Reviews and corrects</h4><p>Reviews every preview, adjusts what doesn’t feel right and tests on her own devices. Her corrections drove every fix in chapter 08.</p></li><li class="step step--claude" data-reveal><span class="step__who">Claude</span><b class="serif">vi.</b><h4>Fixes and moves on</h4><p>Applies her corrections at the root cause, re-tests, and asks for the next reference.</p></li></ol>
+
+    <div class="timeline" data-reveal>
+      <div class="day"><b>4 Nov</b><ul><li>Brief review and recommendations</li><li>Anita’s master instructions</li><li>All eight sections built</li><li>First round of device feedback</li></ul></div>
+      <div class="day"><b>5 Nov</b><ul><li>Fix rounds from Anita’s testing</li><li>Performance and responsive audit</li></ul></div>
+      <div class="day"><b>6 Nov</b><ul><li>Consistent margins and the mobile nav</li><li>Deployed to GitHub and Vercel</li></ul></div>
+    </div>
+
+    <div class="cols" style="margin-top:5rem">
+      <div class="cols__side"><p class="label"><span class="serif">Asset pipeline</span></p></div>
+      <div>
+        <p class="lede" data-reveal>Every cost was quoted before anything was generated. Exactly one image was made per requested item, with no extra variations. Images were reused across sections and effects were drawn in code, to keep generation to a minimum.</p>
+        <div class="stats" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+          <div class="stat" data-reveal><b data-count="42">42</b><span>images generated, all at draft quality</span></div>
+          <div class="stat" data-reveal><b data-count="10.5" data-dec="2">10.50</b><span>Higgsfield credits in total, at 0.25 each</span></div>
+          <div class="stat" data-reveal><b data-count="1">1</b><span>section built with no new images</span></div>
+          <div class="stat" data-reveal><b data-count="0">0</b><span>credits for background removal, done locally with rembg</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="chart" id="creditchart" data-reveal>
+      <div class="chart__bar"><p style="margin:0;font-weight:700">Credits spent per section (images generated)</p><button class="tbtn" type="button" data-table-toggle>Show as table</button></div>
+      <div class="chart__plot"></div>
+      <div class="chart__table"></div>
+      <p class="muted" style="font-size:.8rem;margin:.8rem 0 0">Source: the project record’s asset table. Higher-quality versions were offered for the hero plate and the full-screen reveal; draft quality was kept.</p>
+    </div>
+
+    </div>
+</section>
+
+<!-- ======================= 08 REFINEMENT ======================= -->
+<section class="chapter bg-herb on-dark" id="ch08" data-num="08" data-name="Designer-Led Refinement" aria-labelledby="t08">
+  <div class="opener">
+    <div>
+      <span class="opener__num" aria-hidden="true">08</span>
+      <h2 class="opener__title" id="t08"><span class="line"><span>Taste is</span></span><span class="line"><span>tested on</span></span><span class="line"><span>real screens.</span></span></h2>
+      <p class="opener__stand" data-reveal>Automated tests passed. Anita’s own devices still found things they missed. Each issue she reported was reproduced with a test, fixed at its root cause and checked again.</p>
+    </div>
+    </div>
+  <div class="block" style="padding-top:0">
+    <p class="note" style="border-color:var(--yolk);color:rgba(247,238,219,.85)"><b style="color:var(--cream)">How to read this chapter.</b> Text in italic serif inside quotation marks is Anita’s message quoted exactly as sent. Plain text marked “summary” is a description of what she reported, where her exact words weren’t recorded. “Before” images are Anita’s own screenshots. “After” images were captured from the deployed build at the same screen size.</p>
+    <div class="cases">
+
+      <article class="case" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">5 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>The Menu landed on top of the Lab</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>After the window was resized, the Menu scene was drawn over the Ingredients Laboratory, so two headlines and two scenes overlapped.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span>Summary: she sent this screenshot from her screen, showing the Menu drawn over the Lab.</span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>Crossing 1025 px had rebuilt six sections, which were then measured out of order. Now animations never rebuild on resize, and positions are always measured in page order. The nav bar became solid, images are preloaded, and costly blur effects were removed.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>Resize and jump tests at four screen sizes show no overlaps. The after image was captured at the same size, after resizing from desktop width.</span></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="ba2">
+            <figure><figcaption class="ba2__tag">Before · Anita’s screen</figcaption><div class="ba2__img"><img src="img/before-lab-overlap.webp" width="1600" height="1606" loading="lazy" alt="Before: Anita's screenshot of the Menu headline and dish drawn over the Lab headline and bowl."></div></figure>
+            <figure><figcaption class="ba2__tag ba2__tag--after">After · deployed build</figcaption><div class="ba2__img"><img src="img/after-lab-after-resize.webp" width="1600" height="1606" loading="lazy" alt="After: the Lab shown cleanly at the same size after a resize."></div></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="case" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">5 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>The nav lost its background over the footer</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>When the page reached the footer, the nav bar’s cream background disappeared and the links ran over the imagery.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span class="quote">“the top bar when it reaches the footer its background goes off”<span class="quote-by">Anita, quoted as sent</span></span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>The nav became a solid cream bar at all times.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>Captured at the same point over the footer, the bar keeps its background and divider.</span></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="ba2">
+            <figure><figcaption class="ba2__tag">Before · Anita’s screen</figcaption><div class="ba2__img"><img src="img/before-nav-bg.webp" width="1600" height="681" loading="lazy" alt="Before: Anita's screenshot of the nav links over the Final Bite imagery with no background."></div></figure>
+            <figure><figcaption class="ba2__tag ba2__tag--after">After · deployed build</figcaption><div class="ba2__img"><img src="img/after-nav-over-footer.webp" width="1600" height="681" loading="lazy" alt="After: a solid cream nav bar over the footer."></div></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="case" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">5 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>Back at the top, the hero had lost its button</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>After scrolling down and back up, the hero’s supporting line and “Explore the menu” button stayed invisible.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span class="quote">“the hero section doesnt show when i scroll down and scroll back up”<span class="quote-by">Anita, quoted as sent</span></span><span class="quote" style="margin-top:.6rem">“the button is important too.”<span class="quote-by">Anita, quoted as sent</span></span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>The opening animation and the scroll animation were still sharing elements. Now the opening animates the inner pieces and the scroll animates their containers. Near-square screens also keep the side-by-side layout, so the button stays in view.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>The hero is fully visible after returning to the top at four screen sizes, button included.</span></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="ba2">
+            <figure><figcaption class="ba2__tag">Before · Anita’s screen</figcaption><div class="ba2__img"><img src="img/before-hero-missing.webp" width="1600" height="1244" loading="lazy" alt="Before: Anita's screenshot of the hero with the headline but no supporting line or button."></div></figure>
+            <figure><figcaption class="ba2__tag ba2__tag--after">After · deployed build</figcaption><div class="ba2__img"><img src="img/after-hero-after-return.webp" width="1600" height="1244" loading="lazy" alt="After: the hero with its supporting line and red button visible after scrolling back up."></div></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="case" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">5 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>The sauce didn’t cover a full screen</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>On a full-screen desktop browser, the sauce flood stopped short and left cream gaps either side. The cream headline became unreadable in those gaps.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span class="quote">“the red background dont spread out well on full screen for web”<span class="quote-by">Anita, quoted as sent</span></span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>The sauce layer had measured the screen only once. Now it re-measures every frame and stretches to fill.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>At a full-screen desktop size, both edges of the flood are sauce from top to bottom.</span></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="ba2">
+            <figure><figcaption class="ba2__tag">Before · Anita’s screen</figcaption><div class="ba2__img"><img src="img/before-sauce-gaps.webp" width="1600" height="1001" loading="lazy" alt="Before: Anita's screenshot of the sauce flood as a band down the middle, with cream gaps either side cutting off the headline."></div></figure>
+            <figure><figcaption class="ba2__tag ba2__tag--after">After · deployed build</figcaption><div class="ba2__img"><img src="img/after-sauce-full-screen.webp" width="1600" height="1001" loading="lazy" alt="After: the sauce flood covering the full width with the cream headline readable."></div></figure>
+          </div>
+        </div>
+      </article>
+
+      <article class="case" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">6 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>The mobile Menu button sat mid-bar</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>On phones the Menu pill sat in the middle of the bar instead of on the shared right margin, and spacing varied between sections.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span class="quote">“on mobile the menu button doesnt use same mobile/tablet margins”<span class="quote-by">Anita, quoted as sent</span></span><span style="display:block;margin-top:.6rem">Summary: she also asked for consistent margins across mobile, tablet and desktop.</span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>An empty nav element had been taking up space. The button is now pinned to the right margin, every section shares one top-spacing value, and the poster margins are aligned.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>The button sits on the 20 px phone margin. The margin check passes on every section at every tested size.</span></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="ba2 ba2--small">
+            <figure><figcaption class="ba2__tag">Before · Anita’s screen</figcaption><div class="ba2__img"><img src="img/before-mobile-menu-btn.webp" width="748" height="188" loading="lazy" alt="Before: the mobile nav with the Menu button sitting mid-bar."></div></figure>
+            <figure><figcaption class="ba2__tag ba2__tag--after">After · deployed build</figcaption><div class="ba2__img"><img src="img/after-mobile-menu-btn.webp" width="748" height="188" loading="lazy" alt="After: the Menu button on the right margin."></div></figure>
+          </div>
+          <p class="evid">Before: Anita’s phone screenshot. After: an emulated phone at the same width.</p>
+        </div>
+      </article>
+
+      <article class="case case--solo" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">4 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>Animations fought when scrolling back up</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>Scrolling back up made scenes overlap, the hero felt slow, and the nav links left scenes looking scattered.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span class="quote">“when you try to scroll back up, they don’t flow well”<span class="quote-by">Anita, quoted as sent</span></span><span class="quote" style="margin-top:.6rem">“i clicked on the lab… it looked scattered”<span class="quote-by">Anita, quoted as sent (excerpt)</span></span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>Fixed start values on every scroll step. Idle loops pause off-screen. Nav jumps use the quick cream curtain. Layouts stack only on portrait screens, and a new mode handles short landscape screens.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>Start and end frames match after scrolling backwards and after jumping from the nav.</span></div></li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="case case--solo" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">5 Nov</span><span class="tag">Found by Anita</span></div>
+          <h3>The Final Bite stopped halfway</h3>
+          <ol class="steps">
+            <li><b>The issue</b><div class="steps__body"><span>The last scene played only part of the way: the placemat and the final button never appeared.</span></div></li>
+            <li><b>Anita’s observation</b><div class="steps__body"><span>Summary: she reported that the Final Bite, which she called the seventh section, was loading only halfway.</span></div></li>
+            <li><b>The change</b><div class="steps__body"><span>Re-measuring had recorded “hidden” as some steps’ end state. Every step in Sections 05, 07 and 08 now has an explicit start and end.</span></div></li>
+            <li><b>Verified</b><div class="steps__body"><span>The scene completes to “HUNGRY YET?” and its button.</span></div></li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="case case--solo" data-reveal>
+        <div>
+          <div class="case__meta"><span class="tag">4 Nov</span><span class="tag">Automated testing</span></div>
+          <h3>Two early catches from testing</h3>
+          <ol class="steps">
+            <li><b>The headline met the food</b><div class="steps__body"><span>Once the real fonts loaded, the hero headline collided with the food, because the test browser had fallen back to a narrower font. Now every test loads the real brand fonts, and the headline and tomato were repositioned.</span></div></li>
+            <li><b>Fog turned the buttons pink</b><div class="steps__body"><span>The menu’s fog layer sat over the red buttons and tinted them. That broke the tomato-red rule, so the fog was moved behind the content.</span></div></li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+    <div class="stats" style="margin-top:4rem">
+      <div class="stat" data-reveal><b>15</b><span>problems found and fixed in total</span></div>
+      <div class="stat" data-reveal><b>6</b><span>reported by Anita from her own devices</span></div>
+      <div class="stat" data-reveal><b>1</b><span>performance audit she asked for (see chapter 09)</span></div>
+      <div class="stat" data-reveal><b>3</b><span>days from brief to live site</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 09 PERFORMANCE ======================= -->
+<section class="chapter" id="ch09" data-num="09" data-name="Performance & Access" aria-labelledby="t09">
+  <div class="opener bg-yolk">
+    <div>
+      <span class="opener__num" aria-hidden="true">09</span>
+      <h2 class="opener__title" id="t09"><span class="line"><span>Smooth,</span></span><span class="line"><span>everywhere.</span></span></h2>
+      <p class="opener__stand" data-reveal>Anita asked for a check that nothing lagged or loaded slowly, and that tablet and mobile were just as responsive. This chapter shows what that audit measured and what changed.</p>
+    </div>
+    </div>
+  <div class="block">
+    <div class="cols">
+      <div class="cols__side"><p class="label"><span class="serif">Frame rate</span></p></div>
+      <div>
+        <p class="lede" data-reveal>The biggest single cost was the soft drop shadows under the food cut-outs. With them switched off in a test, the hero jumped from 23 to 59 fps. So the shadows were baked into the images, steam was rebuilt as cheap gradients and poster clipping was removed.</p>
+      </div>
+    </div>
+    <div class="chart" id="fpschart" data-reveal>
+      <div class="chart__bar">
+        <p style="margin:0;font-weight:700">Frames per second while scrolling each scene: simulated mid-range tablet, CPU slowed 4×</p>
+        <div style="display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap">
+          <span class="legend"><span><i style="background:var(--chart-a)"></i>Before</span><span><i style="background:var(--chart-b)"></i>After</span></span>
+          <button class="tbtn" type="button" data-table-toggle>Show as table</button>
+        </div>
+      </div>
+      <div class="chart__plot"></div>
+      <div class="chart__table"></div>
+      <p class="muted" style="font-size:.8rem;margin:.8rem 0 0">“Before” is the start of the 5 Nov performance audit, after two earlier fix rounds, not the very first build. Sauce held at 56 fps, so not every scene improved, but every scene ended at 55–60 fps.</p>
+    </div>
+
+    <div class="note"><b>A testing caveat.</b> All automated measurements ran in headless Chrome without a graphics card. That confirms layout and behaviour, but it understates smoothness on real hardware, where scenes should be at least this smooth. The desktop figures below are the ones most affected.</div>
+
+    <div class="tokens" style="margin-top:2rem">
+      <div class="tok" data-reveal>
+        <h4>Desktop, 1440 × 900 · fps</h4>
+        <table class="tbl"><thead><tr><th scope="col">Scene</th><th scope="col" class="num">Before</th><th scope="col" class="num">After</th></tr></thead><tbody>
+          <tr><td>Hero</td><td class="num">29</td><td class="num">60</td></tr><tr><td>Chaos</td><td class="num">44</td><td class="num">50</td></tr><tr><td>Lab</td><td class="num">56</td><td class="num">60</td></tr><tr><td>Menu</td><td class="num">60</td><td class="num">60</td></tr><tr><td>Sauce</td><td class="num">53</td><td class="num">44</td></tr><tr><td>Ritual</td><td class="num">49</td><td class="num">55</td></tr><tr><td>Posters</td><td class="num">17</td><td class="num">49</td></tr><tr><td>Final Bite</td><td class="num">25</td><td class="num">60</td></tr>
+        </tbody></table>
+        <p class="muted" style="font-size:.82rem;margin-top:.6rem">The sauce flood measured lower after the pass (53 → 44) in this test, which has no graphics card. It’s shown here as measured.</p>
+      </div>
+      <div class="tok" data-reveal>
+        <h4>Mobile and loading</h4>
+        <table class="tbl"><tbody>
+          <tr><td>Phone 390 × 844, CPU slowed 4×</td><td class="num">57–60 fps, every scene</td></tr>
+          <tr><td>Longest freeze while loading</td><td class="num">1.6 s → 0.57 s</td></tr>
+          <tr><td>Total image weight</td><td class="num">4.1 → 3.8 MB</td></tr>
+          <tr><td>Layout shift during load</td><td class="num">None</td></tr>
+          <tr><td>Sideways scrolling, any tested size</td><td class="num">None</td></tr>
+        </tbody></table>
+      </div>
+      <div class="tok" data-reveal>
+        <h4>Responsive layouts</h4>
+        <table class="tbl"><tbody>
+          <tr><td>Desktop &gt; 1024 px</td><td>Full side-by-side compositions</td></tr>
+          <tr><td>Tablet landscape</td><td>Desktop compositions, scaled</td></tr>
+          <tr><td>Tablet portrait</td><td>Copy stacked above the scene</td></tr>
+          <tr><td>Phone portrait</td><td>Stacked, mobile menu, simpler scenes</td></tr>
+          <tr><td>Phone landscape ≤ 540 px tall</td><td>Desktop layout sized by screen height</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="devices devices--two" data-reveal>
+      <figure class="shot"><div class="shot__frame"><img src="img/tablet-s03_050.webp" width="760" height="1013" loading="lazy" alt="The Lab on tablet portrait, stacked."></div><figcaption class="cap"><span>Tablet · emulated iPad</span></figcaption></figure>
+      <figure class="shot"><div class="shot__frame"><img src="img/phone-s03_050.webp" width="600" height="1022" loading="lazy" alt="The Lab on a phone, stacked."></div><figcaption class="cap"><span>Phone · emulated iPhone 13</span></figcaption></figure>
+    </div>
+    <p class="cap" style="justify-content:flex-start">The Lab mid-assembly on tablet and phone. Its desktop version is in chapter 05. Captured from the deployed build; tablet and phone sizes are emulated.</p>
+
+    <div class="a11y">
+      <div data-reveal><h4>Reduced motion</h4><p>Every section has a composed, still version. The menu becomes a swipe carousel and the posters stack as stills.</p></div>
+      <div data-reveal><h4>Structure and keyboard</h4><p>Semantic HTML, a skip link, and real headings for screen readers wherever a headline is made of animated letters. The dish details use a labelled dialog. All controls are real buttons or links, with a focus ring shown only to keyboard users.</p></div>
+      <div data-reveal><h4>Contrast</h4><p>The automated audit (axe-core, WCAG A and AA rules) led to a darker secondary grey and larger button text. One flag remains by design: a menu dish’s dimmed text while it slides out of focus.</p></div>
+    </div>
+    </div>
+</section>
+
+<!-- ======================= 10 LAUNCH ======================= -->
+<section class="chapter" id="ch10" data-num="10" data-name="The Launch" aria-labelledby="t10">
+  <div class="launch">
+    <div>
+      <p class="label kicker"><span class="serif">N° 10</span> The Launch</p>
+      <h2 class="opener__title" id="t10" style="font-size:clamp(3rem,8vw,7.5rem)"><span class="line"><span>Hungry</span></span><span class="line"><span>yet?</span></span></h2>
+      <p class="opener__stand" data-reveal>Live since 6 November 2026, on Vercel’s free Hobby plan. It redeploys automatically whenever code is pushed to GitHub.</p>
+      <div class="cover__ctas" style="margin-top:1.8rem" data-reveal>
+        <a class="btn" href="https://feast-mode-eta.vercel.app" rel="noopener">Visit FEAST MODE<span class="btn__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13 13 1M13 1H4M13 1v9" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+        <a class="btn btn--ghost" href="https://github.com/AnitaLever-UX/feast-mode" rel="noopener">Read the code<span class="btn__icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 13 13 1M13 1H4M13 1v9" stroke="currentColor" stroke-width="1.8"/></svg></span></a>
+      </div>
+    </div>
+    </div>
+  <div class="block" style="padding-top:0">
+    <div class="cols">
+      <div class="cols__side"><p class="label"><span class="serif">Shipping it</span></p></div>
+      <div>
+        <p class="lede" data-reveal>A clean copy of the site (76 files, about 4.3 MB) went to a public GitHub repository and on to Vercel. GSAP is bundled with the site so no third-party scripts run. A settings file adds caching and security headers, and the site has a favicon, a link-preview image and a branded 404 page: <em>“This plate is empty.”</em></p>
+        <ol class="deploy" data-reveal>
+          <li><b>Anita</b><div class="steps__body"><span>Created a Vercel account and connected it to Claude</span></div></li>
+          <li><b>Anita</b><div class="steps__body"><span>Created the GitHub account and an empty feast-mode repository, and connected it to Claude</span></div></li>
+          <li><b>Claude</b><div class="steps__body"><span>Uploaded the code to the repository</span></div></li>
+          <li><b>Anita</b><div class="steps__body"><span>Linked GitHub to Vercel and installed Vercel’s GitHub app for that repository only</span></div></li>
+          <li><b>Claude</b><div class="steps__body"><span>Created the Vercel project. The first build took about 2 seconds</span></div></li>
+          <li><b>Claude</b><div class="steps__body"><span>Verified the live site: scripts, favicon, 404 page, compression and security headers</span></div></li>
+          <li><b>Claude</b><div class="steps__body"><span>Found that Vercel had put every address behind a login, and switched to standard protection: the main address public, previews private</span></div></li>
+          <li><b>Anita</b><div class="steps__body"><span>Confirmed that the public link opens for other people</span></div></li>
+        </ol>
+      </div>
+    </div>
+    <div class="stats" style="margin-top:5rem">
+      <div class="stat" data-reveal><b>8/8</b><span>sections delivered, in the brief’s order</span></div>
+      <div class="stat" data-reveal><b>7</b><span>pinned scroll scenes, and one breather</span></div>
+      <div class="stat" data-reveal><b>55–60</b><span>fps on tablet, every scene, after the fixes</span></div>
+      <div class="stat" data-reveal><b>$0</b><span>hosting cost, on the Vercel Hobby plan</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot on-dark">
+  <div class="foot__row" style="margin-top:0">
+    <p style="margin:0;max-width:34rem">FEAST MODE®, its dishes and its prices are fictional. This is a personal portfolio project, built 4–6 November 2026. Creative direction, references and QA by Anita, a UX/UI designer. Build, image generation and testing by Claude. Images generated in Higgsfield.</p>
+    <p style="margin:0"><a class="link" href="https://feast-mode-eta.vercel.app" rel="noopener">Live site</a> · <a class="link" href="https://github.com/AnitaLever-UX/feast-mode" rel="noopener">GitHub</a> · <a class="link" href="#ch01">Back to top</a></p>
+  </div>
+  <p class="foot__word" aria-hidden="true">FEAST MODE®</p>
+</footer>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/cs.js"></script>
+</body>
+</html>
